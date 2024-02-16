@@ -44,8 +44,34 @@ ln -sf auto/configure configure
   --with-cc-opt="-I$PREFIX_OPENSSL/include -O2 -pipe -fPIE -fPIC -Werror=format-security -D_FORTIFY_SOURCE=2" \
   --with-ld-opt="-L$PREFIX_OPENSSL/lib" \
   \
+  --with-compat \
+  --with-debug \
+  -with-http_addition_module \
+  --with-http_auth_request_module \
+  --with-http_dav_module \
+  --with-http_degradation_module \
+  --with-http_flv_module \
+  --with-http_gunzip_module \
+  --with-http_gzip_static_module \
+  --with-http_mp4_module \
+  --with-http_random_index_module \
+  --with-http_realip_module \
+  --with-http_secure_link_module \
+  --with-http_slice_module \
   --with-http_ssl_module \
+  --with-http_stub_status_module \
+  --with-http_sub_module \
   --with-http_v2_module \
+  --with-http_v3_module \
+  --with-ipv6 \
+  --with-mail \
+  --with-mail_ssl_module \
+  --with-pcre \
+  --with-pcre-jit \
+  --with-stream \
+  --with-stream_realip_module \
+  --with-stream_ssl_module \
+  --with-stream_ssl_preread_module
   ;
 
 echo -e "\nNginx building (a few minutes may pass with no output)...\n"
