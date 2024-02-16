@@ -46,7 +46,7 @@ ln -sf auto/configure configure
   \
   --with-compat \
   --with-debug \
-  -with-http_addition_module \
+  --with-http_addition_module \
   --with-http_auth_request_module \
   --with-http_dav_module \
   --with-http_degradation_module \
